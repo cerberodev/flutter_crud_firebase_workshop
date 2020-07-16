@@ -36,10 +36,10 @@ class _MyHomePageState extends State<MyHomePage> {
       endDrawer: Drawer(),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             FlutterLogo(size: 150),
-            Forms(),
+            Expanded(child: SingleChildScrollView(child: Forms())),
           ],
         ),
       ),
