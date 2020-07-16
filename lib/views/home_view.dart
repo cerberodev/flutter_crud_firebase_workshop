@@ -10,14 +10,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 100;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Center(
               child: Text(
                   "Esto lo desarralloamos con los chicos del GDG CUSCO, AREQUIPA & FLUTTER PERU"),
-            )
+            ),
           ],
         ),
       ),
@@ -46,20 +38,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             FlutterLogo(size: 200),
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Incrementa',
-        child: Icon(Icons.add_circle),
       ),
     );
   }
