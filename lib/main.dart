@@ -11,11 +11,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Profesores y Alumnos',
       theme: ThemeData(
+        brightness: Brightness.light,
         primaryColor: Color(0xFF1B5E20),
         accentColor: Colors.amber,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      darkTheme: ThemeData.dark(),
+      darkTheme: ThemeData(brightness: Brightness.dark),
       home: MyHomePage(title: 'Profesores y Alumnos'),
     );
   }

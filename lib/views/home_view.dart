@@ -1,3 +1,4 @@
+import 'package:crud/views/forms.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -35,9 +36,10 @@ class _MyHomePageState extends State<MyHomePage> {
       endDrawer: Drawer(),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            FlutterLogo(size: 200),
+            FlutterLogo(size: 150),
+            Forms(),
           ],
         ),
       ),
