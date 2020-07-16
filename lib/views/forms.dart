@@ -83,42 +83,63 @@ class _FormsState extends State<Forms> {
             )),
             Divider(height: 25),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisSize: MainAxisSize.min,
               children: [
-                RaisedButton(
-                  onPressed: () {
-                    print("button create");
-                  },
-                  color: Colors.amber,
-                  highlightColor: Color(0xFF1B5E20),
-                  child: Icon(Icons.add),
+                Expanded(
+                  child: RaisedButton(
+                    onPressed: () {
+                      print("button create");
+                    },
+                    color: Colors.amber,
+                    highlightColor: Color(0xFF1B5E20),
+                    child: Icon(Icons.add),
+                  ),
                 ),
-                RaisedButton(
-                  onPressed: () {
-                    print("button read");
-                  },
-                  color: Colors.amber,
-                  highlightColor: Color(0xFF1B5E20),
-                  child: Icon(Icons.rotate_90_degrees_ccw),
+                SizedBox(width: 10),
+                Expanded(
+                  child: RaisedButton(
+                    onPressed: () {
+                      print("button read");
+                    },
+                    color: Colors.amber,
+                    highlightColor: Color(0xFF1B5E20),
+                    child: Icon(Icons.rotate_90_degrees_ccw),
+                  ),
                 ),
-                RaisedButton(
-                  onPressed: () {
-                    print("button update");
-                  },
-                  color: Colors.amber,
-                  highlightColor: Color(0xFF1B5E20),
-                  child: Icon(Icons.update),
+                SizedBox(width: 10),
+                Expanded(
+                  child: RaisedButton(
+                    onPressed: () {
+                      print("button update");
+                    },
+                    color: Colors.amber,
+                    highlightColor: Color(0xFF1B5E20),
+                    child: Icon(Icons.update),
+                  ),
                 ),
-                RaisedButton(
-                  onPressed: () {
-                    print("button delete");
-                  },
-                  color: Colors.amber,
-                  highlightColor: Color(0xFF1B5E20),
-                  child: Icon(Icons.delete),
+                SizedBox(width: 10),
+                Expanded(
+                  child: RaisedButton(
+                    onPressed: () {
+                      print("button delete");
+                    },
+                    color: Colors.amber,
+                    highlightColor: Color(0xFF1B5E20),
+                    child: Icon(Icons.delete),
+                  ),
                 ),
               ],
-            )
+            ),
+            Divider(),
+            RaisedButton(
+              onPressed: () {
+                print("button new page");
+              },
+              color: Colors.amber,
+              highlightColor: Color(0xFF1B5E20),
+              child: Icon(Icons.arrow_right, size: 24),
+            ),
           ],
         ),
       ),
